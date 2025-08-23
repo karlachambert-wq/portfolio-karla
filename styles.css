@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+  position: relative;
+  height: 100vh;
+}
+.light {
+  background: #8308ff;
+  position: absolute;
+  opacity: 100%;
+  z-index: -5;
+  border-radius: 50%;
+  box-shadow: 30px 10px 50px rgba(168, 129, 237, 0.6),
+  /* décalée en bas à droite */ -20px -15px 40px rgba(94, 53, 177, 0.4),
+  /* décalée en haut à gauche */ 10px 40px 80px rgba(106, 27, 154, 0.3); /* diffuse vers le bas */
+}
+
+.light-left {
+height: 400px;
+width: 400px;
+left: -200px;
+top: 0;
+filter: blur(250px);
+}
+
+.light-right {
+  height: 700px;
+  width: 700px;
+  right: 50px;
+  bottom: 0;
+  transform: translateY(0);
+  filter: blur(350px);
+} 
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 96px;
+  align-items: center;
+  padding: 0 128px;
+  color: white;
+  gap: 172px;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 72px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff61;
+  border-radius: 16px;
+  padding: 0 20px 6px;
+}
+
+.violet {
+  color: #9500ff; /* remplace par le violet que tu veux */
+}
+
+.last-part-navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: white;
+
+  .menu-navbar {
+    display: flex;
+    gap: 8px;
+  }
+
+  .symbol-menu {
+    rotate: 270deg;
+  }
+
+  .icon {
+    font-size: 44px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
